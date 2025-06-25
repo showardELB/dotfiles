@@ -1,0 +1,10 @@
+# Ignore all temporary directories from .glzr/zebar
+.glzr/zebar/tmp-*/
+
+# Ignore other common cache and temporary folders
+.cache/
+/node_modules/
+/vendor/
+
+# Ignore log files
+*.log
