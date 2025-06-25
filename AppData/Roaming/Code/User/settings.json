@@ -1,0 +1,187 @@
+{
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[csharp]": {
+    "editor.defaultFormatter": "ms-dotnettools.csharp"
+  },
+  "editor.rulers": [80, 120],
+  "vsicons.dontShowNewVersionMessage": true,
+  "yaml.schemas": {
+    "file:///c%3A/Users/s.howard_elbglobal/.vscode/extensions/atlassian.atlascode-3.2.1/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+  },
+  "git.autofetch": true,
+  "terminal.integrated.profiles.windows": {
+    "PowerShell": {
+      "source": "PowerShell",
+      "icon": "terminal-powershell",
+      "path": ["c:/Program Files/PowerShell/7/pwsh.exe"]
+    },
+    "Command Prompt": {
+      "path": [
+        "${env:windir}\\Sysnative\\cmd.exe",
+        "${env:windir}\\System32\\cmd.exe"
+      ],
+      "args": [],
+      "icon": "terminal-cmd"
+    },
+    "Git Bash": {
+      "source": "Git Bash"
+    }
+  },
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "workbench.iconTheme": "vscode-icons",
+  "cSpell.userWords": [
+    "allo",
+    "Backorder",
+    "backorders",
+    "Dtos",
+    "Entitys",
+    "ISOF",
+    "mantine",
+    "mockdata",
+    "Nums",
+    "pidsn",
+    "Quan",
+    "returnline",
+    "Serilog",
+    "shdb",
+    "shslt",
+    "soid",
+    "SOPTYPE",
+    "sosid",
+    "soslt",
+    "subledgertype",
+    "Summ",
+    "supc",
+    "tabler",
+    "webdeploy"
+  ],
+  "diffEditor.ignoreTrimWhitespace": false,
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "never"
+  },
+  "mssql.enableRichExperiences": true,
+  "editor.fontFamily": "'CaskaydiaCove Nerd Font', Consolas, 'Courier New', monospace",
+  "csharp.debug.hotReloadOnSave": false,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "print.folder.fileNames": true,
+  "print.folder.include": [],
+  "print.folder.exclude": [
+    "{bin,obj,out}",
+    "node_modules",
+    "data",
+    "**/*.{bin,exe,dll,hex,pdb,pdf,pfx,png,jpg,gif,bmp,suo,design}"
+  ],
+  "print.folder.maxLines": 1200,
+  "print.folder.maxFiles": 30,
+  "print.folder.includeFileList": false,
+  "git.confirmSync": false,
+  "mssql.connections": [],
+  "mssql.objectExplorer.groupBySchema": true,
+  "debug.onTaskErrors": "abort",
+  "security.workspace.trust.untrustedFiles": "open",
+  "editor.lineNumbers": "relative",
+  "vim.leader": "<Space>",
+  "vim.hlsearch": true,
+  "vim.normalModeKeyBindingsNonRecursive": [
+    // NAVIGATION
+    // switch b/w buffers
+    { "before": ["<S-h>"], "commands": [":bprevious"] },
+    { "before": ["<S-l>"], "commands": [":bnext"] },
+
+    // splits
+    { "before": ["leader", "v"], "commands": [":vsplit"] },
+    { "before": ["leader", "s"], "commands": [":split"] },
+
+    // panes
+    {
+      "before": ["leader", "h"],
+      "commands": ["workbench.action.focusLeftGroup"]
+    },
+    {
+      "before": ["leader", "j"],
+      "commands": ["workbench.action.focusBelowGroup"]
+    },
+    {
+      "before": ["leader", "k"],
+      "commands": ["workbench.action.focusAboveGroup"]
+    },
+    {
+      "before": ["leader", "l"],
+      "commands": ["workbench.action.focusRightGroup"]
+    },
+    // NICE TO HAVE
+    { "before": ["leader", "w"], "commands": [":w!"] },
+    // { "before": ["leader", "q"], "commands": [":confirm q"] },
+    {
+      "before": ["leader", "q"],
+      "commands": ["workbench.action.closeActiveEditor"]
+    },
+    { "before": ["leader", "x"], "commands": [":x!"] },
+    {
+      "before": ["[", "d"],
+      "commands": ["editor.action.marker.prev"]
+    },
+    {
+      "before": ["]", "d"],
+      "commands": ["editor.action.marker.next"]
+    },
+    {
+      "before": ["<leader>", "c", "a"],
+      "commands": ["editor.action.quickFix"]
+    },
+    { "before": ["leader", "f"], "commands": ["workbench.action.quickOpen"] },
+    { "before": ["leader", "p"], "commands": ["editor.action.formatDocument"] },
+    {
+      "before": ["g", "h"],
+      "commands": ["editor.action.showDefinitionPreviewHover"]
+    },
+    {
+      "before": ["leader", "y"],
+      "commands": ["editor.action.clipboardCopyAction"]
+    },
+    {
+      "before": ["leader", "p"],
+      "commands": ["editor.action.clipboardPasteAction"]
+    },
+    {
+      "before": ["<leader>", "d"],
+      "after": ["v", "i", "w", "<leader>", "d"]
+    },
+    {
+      "before": ["<leader>", "n"],
+      "commands": [":nohlsearch"]
+    }
+  ],
+  "vim.visualModeKeyBindings": [
+    // Stay in visual mode while indenting
+    { "before": ["<"], "commands": ["editor.action.outdentLines"] },
+    { "before": [">"], "commands": ["editor.action.indentLines"] },
+    // Move selected lines while staying in visual mode
+    { "before": ["J"], "commands": ["editor.action.moveLinesDownAction"] },
+    { "before": ["K"], "commands": ["editor.action.moveLinesUpAction"] },
+    // toggle comment selection
+    { "before": ["leader", "c"], "commands": ["editor.action.commentLine"] },
+    {
+      "before": ["<leader>", "y"],
+      "commands": ["editor.action.clipboardCopyAction", "extension.vim_escape"]
+    },
+    {
+      "before": ["leader", "p"],
+      "commands": ["editor.action.clipboardPasteAction", "extension.vim_escape"]
+    },
+    {
+      "before": ["<leader>", "d"],
+      "commands": ["editor.action.addSelectionToNextFindMatch"]
+    },
+    {
+      "before": ["<leader>", "D"],
+      "commands": ["editor.action.selectHighlights"]
+    }
+  ],
+  "vim.handleKeys": {
+    "<C-p>": false,
+    "<C-S-c>": true
+  }
+}
