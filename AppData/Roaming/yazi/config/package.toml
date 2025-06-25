@@ -1,0 +1,9 @@
+[[plugin.deps]]
+use = "KKV9/compress"
+rev = "9fc8fe0"
+hash = "8621ef7eaab39e3cec4249b4f6261623"
+
+[[flavor.deps]]
+use = "yazi-rs/flavors:catppuccin-frappe"
+rev = "d04a298"
+hash = "674b2683347df73a83ff2e2060b1c0d9"
