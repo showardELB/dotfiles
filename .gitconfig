@@ -1,0 +1,34 @@
+[include]
+	path = ~/.config/git/themes.gitconfig
+[core]
+	editor = \"C:\\Users\\s.howard_elbglobal\\AppData\\Local\\Programs\\Microsoft VS Code\\bin\\code\" --wait
+	pager = delta
+[user]
+	name = showardELB
+	email = s.howard@elbglobal.com
+[credential "https://github.com"]
+	username = showardELB
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[merge]
+	tool = vsdiffmerge
+[mergetool]
+	prompt = true
+[mergetool "vsdiffmerge"]
+	cmd = \"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\TeamFoundation\\Team Explorer\\vsdiffmerge.exe\" \"$REMOTE\" \"$LOCAL\" \"$BASE\" \"$MERGED\" //m
+	keepBackup = false
+	trustExitCode = true
+[diff]
+	tool = vsdiffmerge
+[difftool]
+	prompt = true
+[difftool "vsdiffmerge"]
+	cmd = \"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\TeamFoundation\\Team Explorer\\vsdiffmerge.exe\" \"$LOCAL\" \"$REMOTE\" //t
+	keepBackup = false
+[delta]
+	side-by-side = true
+	line-numbers = true
+	features = chameleon
