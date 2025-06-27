@@ -9,6 +9,7 @@ if ($host.Name -eq 'ConsoleHost')
 }
 Import-Module -Name Terminal-Icons
 
+[Environment]::SetEnvironmentVariable("YAZI_FILE_ONE", "C:\Program Files\Git\usr\bin\file.exe", "User")
 $env:FZF_DEFAULT_OPTS = "--layout=reverse --height=50% --border --info=inline"
 
 # Optional: alias for your custom desktop script
