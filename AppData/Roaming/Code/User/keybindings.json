@@ -161,5 +161,15 @@
     "key": "ctrl+j",
     "command": "-extension.vim_ctrl+j",
     "when": "editorTextFocus && vim.active && vim.use<C-j> && !inDebugRepl"
+  },
+  {
+    "key": "ctrl+shift+g",
+    "command": "workbench.view.scm",
+    "when": "workbench.scm.active && !gitlens:disabled && config.gitlens.keymap == 'chorded'"
+  },
+  {
+    "key": "ctrl+shift+g g",
+    "command": "-workbench.view.scm",
+    "when": "workbench.scm.active && !gitlens:disabled && config.gitlens.keymap == 'chorded'"
   }
 ]
